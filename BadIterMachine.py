@@ -181,7 +181,7 @@ print("")
 
 25
 
-os.system("generinv -I C:/Users/mysti/BadIter -o baditer")
+os.system("generinv -I C:\\Users\\mysti\\Coding\\BadIterMachine -o baditer")
 
 os.system("generiter -L baditer.json -C composeh2.json")
 
