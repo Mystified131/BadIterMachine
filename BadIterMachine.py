@@ -183,6 +183,6 @@ print("")
 
 os.system("generinv -I C:/Users/mysti/BadIter -o baditer")
 
-os.system("generiter -L baditer.json -C composeh.json")
+# generiter -L baditer.json -C composeh.json
 
 ## THE GHOST OF THE SHADOW ##
