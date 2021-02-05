@@ -20,27 +20,35 @@ for subdir, dirs, files in os.walk(srchstr):
     for file in files:
         filepath = subdir + os.sep + file
 
+        sizlim = 5000000
         
         if  filepath.endswith(".wav") and ("Drum" in str(filepath))  or ("Beat" in str(filepath)) or ("drum" in str(filepath)) or ("beat" in str(filepath)): 
-            contentbeats.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:
+                contentbeats.append(filepath)
 
         if  filepath.endswith(".wav") and ("Pad" in str(filepath)) or ("pad" in str(filepath)):
-            contentdrones.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+                contentdrones.append(filepath)
 
         if  filepath.endswith(".wav") and ("Bass" in str(filepath)) or ("bass" in str(filepath)):
-            contentbass.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+                contentbass.append(filepath)
 
         if  filepath.endswith(".wav") and ("One Shot" in str(filepath)) or ("one shot" in str(filepath)):
-            contentorg.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+             contentorg.append(filepath)
 
         if  filepath.endswith(".wav") and ("FX" in str(filepath)) or ("fx" in str(filepath)) :
-            contentsax.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+                contentsax.append(filepath)
 
         if  filepath.endswith(".wav") and ("Drone" in str(filepath)) or ("drone" in str(filepath)) :
-            contentgit.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+                contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Twinkle" in str(filepath)) or ("twinkle" in str(filepath)) and ("Amplitude" not in str(filepath))) :
-            contentpepper.append(filepath)
+            if int(os.stat(filepath).st_size) < sizlim:  
+                contentpepper.append(filepath)
 
 print("")
 
