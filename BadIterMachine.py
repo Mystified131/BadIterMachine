@@ -175,13 +175,18 @@ for ctr in range(50):
 
 print("")
 
-print("The new files should be written to your 'BadIter' folder in your home directory.")
+print("The new files should be written to your 'BadIter' folder in your home directory, and the inventory json added to the same directory.")
 
 print("")
 
 25
 
 os.system("generinv -I C:/Users/mysti/BadIter -o baditer")
+
+instr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\baditer.json"
+outstr = 'C:\\Users\\mysti\baditer.json'
+
+shutil.copy(instr, outstr)
 
 # generiter -L baditer.json -C composeh.json
 
