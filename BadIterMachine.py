@@ -183,13 +183,6 @@ print("")
 
 os.system("generinv -I C:/Users/mysti/BadIter -o baditer")
 
-#instr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\baditer.json"
-#outstr = '"C:\Users\mysti\Coding\BadIterMachine\BadIter.json'
-
-#shutil.copy(instr, outstr)
-
-os.system("generiter -L baditer.json -C composeh.json")
-
-# generiter -L baditer.json -C composeh.json
+os.system("generiter -L baditer.json -C composeh2.json")
 
 ## THE GHOST OF THE SHADOW ##
