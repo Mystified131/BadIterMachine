@@ -4,11 +4,11 @@ import random
 import shutil
 import os
 
-for subdir, dirs, files in os.walk("C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter"):
+for subdir, dirs, files in os.walk("C:\\Users\\mysti\\BadIter"):
     for file in files:
         filepath = subdir + os.sep + file
 
-        if (filepath.endswith(".wav")) or (filepath.endswith(".sfk")):
+        if (filepath.endswith(".wav")) or (filepath.endswith(".sfk")) :
             os. remove(filepath) 
 
 #srchstr = 'C:\\Users\\mysti\\Media_Files\\Sounds\\Bin'
@@ -74,7 +74,7 @@ for ctr in range(80):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Beats\\Beat_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Beats\\Beat_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentbeats[y], outstr)
 
 x = len(contentdrones)
@@ -90,7 +90,7 @@ for ctr in range(60):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Drone\\Drone_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Drone\\Drone_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentdrones[y], outstr)
 
 x = len(contentpepper)
@@ -106,7 +106,7 @@ for ctr in range(60):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Pepper\\Pepper_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Pepper\\Pepper_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentpepper[y], outstr)
 
 x = len(contentbass)
@@ -122,7 +122,7 @@ for ctr in range(50):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Bass\\Bass_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Bass\\Bass_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentbass[y], outstr)
 
 x = len(contentorg)
@@ -138,7 +138,7 @@ for ctr in range(50):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Organ\\Organ" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Organ\\Organ" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentorg[y], outstr)
 
 x = len(contentsax)
@@ -154,7 +154,7 @@ for ctr in range(50):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Saxophone\\Saxophone_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Saxophone\\Saxophone_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentsax[y], outstr)
 
 x = len(contentgit)
@@ -170,7 +170,7 @@ for ctr in range(50):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\BadIter\\Guitar\\Guitar_" + str(ctr) + tracknam + ".wav"
+    outstr = "C:\\Users\\mysti\\BadIter\\Guitar\\Guitar_" + str(ctr) + tracknam + ".wav"
     shutil.copy(contentgit[y], outstr)
 
 print("")
@@ -181,8 +181,8 @@ print("")
 
 25
 
-os.system("generinv -I C:\\Users\\mysti\\Coding\\BadIterMachine -o baditer")
+os.system("generinv -I C:\\Users\\mysti -o baditer")
 
-os.system("generiter -L baditer.json -C composeh2.json")
+# generiter -L baditer.json -C composeh2.json
 
 ## THE GHOST OF THE SHADOW ##
