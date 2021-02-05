@@ -1,0 +1,50 @@
+{
+    "Basic" : {
+        "groove" : {
+            "tracks" : 24,
+            "cycle" : 7,
+            "voices" : [
+                "Beats",
+                "Bass",
+                "Drone",
+                "Organ"
+            ]
+        }
+    },
+    "Solo" : {
+        "multivoice_serial_ordered" : {
+            "tracks" : 32,
+            "voices" : [
+                "Pepper",
+                "Saxophone",
+                "Guitar",
+                "Drone",
+                "Drone",
+                "Saxophone",
+                "Pepper",
+                "Pepper",
+                "Guitar",
+                "Pepper"
+            ]
+        }
+    },
+    "Mix" : {
+        "multitrack" : {
+            "trackfade" : 10000,
+            "tracks" : 18,
+            "voices" : {
+                "Basic": 15,
+                "Solo" : -10
+        }
+        }
+    },
+    "Globals" : {
+        "destination" : "C:\\Users\\mysti\\Desktop\\GenerIter_Output",
+        "tsize" : "m",
+        "sequence" : [
+            "Basic",
+            "Solo",
+            "Mix"
+        ]
+    }
+}
