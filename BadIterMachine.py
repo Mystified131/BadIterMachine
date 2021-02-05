@@ -175,7 +175,7 @@ for ctr in range(50):
 
 print("")
 
-print("The new files should be written to your 'BadIter' folder in your home directory, and the inventory json added to the same directory.")
+print("The new files should be written to your home directory, and the inventory json added to the same directory.")
 
 print("")
 
