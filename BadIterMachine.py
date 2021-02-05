@@ -179,9 +179,12 @@ print("The new files should be written to your 'BadIter' folder in your home dir
 
 print("")
 
-25
-
 os.system("generinv -I C:\\Users\\mysti -o baditer")
+
+instr = "C:\\Users\\mysti\\Coding\\BadIterMachine\\baditer.json"
+ostr =  "C:\\Users\\mysti"
+
+shutil.copy(instr, ostr)
 
 # generiter -L baditer.json -C composeh2.json
 
