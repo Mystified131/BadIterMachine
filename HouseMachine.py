@@ -33,7 +33,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and ("String" in str(filepath))  and ("House" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Sequence" in str(filepath))  and ("House" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
