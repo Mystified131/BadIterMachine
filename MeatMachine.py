@@ -29,15 +29,15 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 5000000
         
-        if  filepath.endswith(".wav") and ("Drum" in str(filepath))  and ("House" in str(filepath)): 
+        if  filepath.endswith(".wav") and ("House" in str(filepath))  and ("Drums" in str(filepath)): 
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Sequence" in str(filepath))  and ("House" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Sequence" in str(filepath))  and ("Techno" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("House" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Funk" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
@@ -45,11 +45,11 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
              contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Fx" in str(filepath)) and ("Minimal" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("FX" in str(filepath)) and ("Toyz" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and  ("Ambient" in str(filepath)) and ("Rapoon" in str(filepath)) :
+        if  filepath.endswith(".wav") and  ("Space" in str(filepath)) and ("Point" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentgit.append(filepath)
 
