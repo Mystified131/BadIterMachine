@@ -29,7 +29,7 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 5000000
         
-        if  filepath.endswith(".wav") and ("House" in str(filepath))  and ("Drums" in str(filepath)): 
+        if  filepath.endswith(".wav") and ("House" in str(filepath))  and ("Drum" in str(filepath)) or ("House" in str(filepath))  and ("Beat" in str(filepath)): 
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
@@ -37,7 +37,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Funk" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Hip Hop" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
