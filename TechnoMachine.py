@@ -29,7 +29,7 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 5000000
         
-        if  filepath.endswith(".wav") and ("House" in str(filepath))  and ("Drum" in str(filepath)) or ("House" in str(filepath))  and ("Beat" in str(filepath)): 
+        if  filepath.endswith(".wav") and ("Drum" in str(filepath))  and ("Techno" in str(filepath)): 
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
@@ -37,7 +37,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Hip Hop" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Techno" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
@@ -49,7 +49,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and  ("Space" in str(filepath)) and ("Point" in str(filepath)) :
+        if  filepath.endswith(".wav") and  ("Ambient" in str(filepath)) and ("Rapoon" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentgit.append(filepath)
 
@@ -187,6 +187,6 @@ ostr = "C:\\Users\\mysti"
 
 shutil.copy(instr, ostr)
 
-# generiter -L baditer.json -C composej.json
+# generiter -L baditer.json -C composeh.json
 
 ## THE GHOST OF THE SHADOW ##
