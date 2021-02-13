@@ -29,15 +29,14 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 5000000
         
-        if  filepath.endswith(".wav") and ("Drum" in str(filepath))  and ("ML" in str(filepath)): 
-            if int(os.stat(filepath).st_size) < sizlim:
+        if  filepath.endswith(".wav") and ("Easy" in str(filepath))  and ("Drum" in str(filepath)):
                 contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Patterns" in str(filepath))  and ("ML" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Keys" in str(filepath))  and ("Ambi" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("ML" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Ambi" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
@@ -45,11 +44,11 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
              contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Space" in str(filepath)) and ("Point" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Pad" in str(filepath)) and ("Ambi" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and  ("ML" in str(filepath)) and ("Pad" in str(filepath)) :
+        if  filepath.endswith(".wav") and  ("Space" in str(filepath)) and ("Point" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentgit.append(filepath)
 
@@ -187,6 +186,6 @@ ostr = "C:\\Users\\mysti"
 
 shutil.copy(instr, ostr)
 
-# generiter -L baditer.json -C composeh.json
+# generiter -L baditer.json -C composej.json
 
 ## THE GHOST OF THE SHADOW ##
