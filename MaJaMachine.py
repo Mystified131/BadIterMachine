@@ -187,6 +187,6 @@ ostr = "C:\\Users\\mysti"
 
 shutil.copy(instr, ostr)
 
-# generiter -L baditer.json -C composeh.json
+# generiter -L baditer.json -C composek.json
 
 ## THE GHOST OF THE SHADOW ##
