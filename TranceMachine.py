@@ -33,7 +33,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Sequence" in str(filepath))  and ("Trance" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Synth" in str(filepath))  and ("Trance" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
@@ -45,7 +45,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
              contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Synth" in str(filepath)) and ("Trance" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Drone" in str(filepath)) and ("Low" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
