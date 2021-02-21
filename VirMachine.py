@@ -37,7 +37,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Vir" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("LoFi" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
