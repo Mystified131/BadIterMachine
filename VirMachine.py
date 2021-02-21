@@ -49,11 +49,11 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and  ("Melting" in str(filepath)) and ("Vir" in str(filepath)) :
+        if  filepath.endswith(".wav") and  ("Waves" in str(filepath)) and ("Vir" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentgit.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Rhodes" in str(filepath)) and ("Vir" in str(filepath)):
+        if  filepath.endswith(".wav") and ("Melting" in str(filepath)) and ("Vir" in str(filepath)):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentpepper.append(filepath)
 
