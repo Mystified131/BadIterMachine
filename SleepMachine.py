@@ -29,15 +29,15 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 5000000
         
-        if  filepath.endswith(".wav") and ("Drum" in str(filepath)) and ("Sleep" in str(filepath)): 
+        if  filepath.endswith(".wav") and ("Drum" in str(filepath)) and ("Chill" in str(filepath)): 
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Percussion" in str(filepath))  and ("Sleep" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Mallet" in str(filepath))  and ("Sleep" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Sleep" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Dubland" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentbass.append(filepath)
 
