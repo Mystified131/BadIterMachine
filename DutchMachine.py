@@ -53,7 +53,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentgit.append(filepath)
 
-        if  filepath.endswith(".wav") and  ("Fx" in str(filepath)) and ("Glitch" in str(filepath))) :
+        if  filepath.endswith(".wav") and  ("Fx" in str(filepath)) and ("Glitch" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentpepper.append(filepath)
 
