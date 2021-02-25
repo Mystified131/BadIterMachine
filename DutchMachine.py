@@ -45,7 +45,7 @@ for subdir, dirs, files in os.walk(srchstr):
             if int(os.stat(filepath).st_size) < sizlim:  
              contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Node" in str(filepath)) and ("Ambient" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("NODE" in str(filepath)) and ("Ambient Space" in str(filepath)) :
             if int(os.stat(filepath).st_size) < sizlim:  
                 contentsax.append(filepath)
 
