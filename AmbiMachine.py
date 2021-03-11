@@ -3,6 +3,8 @@
 import random
 import shutil
 import os
+from RandFunct import random_number
+from RandFunct2 import random_number2
 
 for subdir, dirs, files in os.walk("C:\\Users\\mysti\\BadIter"):
     for file in files:
@@ -66,7 +68,7 @@ print("")
 print("Beats")
 
 for ctr in range(80):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentbeats[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -82,7 +84,7 @@ print("")
 print("Drone")
 
 for ctr in range(60):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentdrones[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -98,7 +100,7 @@ print("")
 print("Pepper")
 
 for ctr in range(60):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentpepper[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -114,7 +116,7 @@ print("")
 print("Bass")
 
 for ctr in range(50):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentbass[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -130,7 +132,7 @@ print("")
 print("Organ")
 
 for ctr in range(50):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentorg[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -146,7 +148,7 @@ print("")
 print("Saxophone")
 
 for ctr in range(50):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentsax[y]
     trackname = atrack[-20:-4]
     tracknam = ""
@@ -162,7 +164,7 @@ print("")
 print("Guitar")
 
 for ctr in range(50):
-    y = random.randrange(x)
+    y = random_number(x)
     atrack = contentgit[y]
     trackname = atrack[-20:-4]
     tracknam = ""
