@@ -32,7 +32,7 @@ for subdir, dirs, files in os.walk(srchstr):
 
         sizlim = 4500000
 
-        if  filepath.endswith(".wav")  and ("Acid_Loops" in str(filepath)) and ("ZZ Indie" not in str(filepath)) :  
+        if  filepath.endswith(".wav")  and ("Acid_Loops" in str(filepath)) and ("Eth" in str(filepath)) and ("ZZ Indie" not in str(filepath)) :  
             if int(os.stat(filepath).st_size) < sizlim:
                 contentbeats.append(filepath)
             if int(os.stat(filepath).st_size) < sizlim:
